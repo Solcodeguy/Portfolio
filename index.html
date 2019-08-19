@@ -1,39 +1,37 @@
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <!--<![endif]-->
-<!-- Set the viewport width to device width for mobile -->
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- Included CSS Files -->
-<!--[if lt IE 9]>
-<link rel="stylesheet" href="stylesheets/ie.css">
-<![endif]--><script type="text/javascript" src="javascripts/modernizr.foundation.js"></script>
-<!-- IE Fix for HTML5 Tags -->
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+<head>
+    <title>Portfolio wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
 
-<div class="row">
-<div class="twelve columns">
-<h2>Header Twelve Columns</h2>
-</div>
-</div>
-<div class="row">
-<div class="twelve columns">
-<div class="row">
-<div class="seven columns">
-<h2>Body Seven Columns</h2>
-</div>
-<div class="five columns">
-<h2>Sidebar Five Columns</h2>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="twelve columns">
-<h2>Footer Twelve Columns</h2>
-</div>
-</div>
+<body>
+    <nav role="navigation">Nav</nav>
+    <main role="main">
+        <header role="banner">
+            <h1>Hero</h1>
+        </header>
 
+        <section>
+            Section 1
+        </section>
+
+        <section>
+            Section 2
+        </section>
+
+        <section>
+            Project A
+        </section>
+
+        <section>
+            Section 3
+        </section>
+    </main>
+    <footer role="content-info">Footer</footer>
+</body>
+
+</html>
