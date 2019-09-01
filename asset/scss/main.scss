@@ -1,4 +1,23 @@
-body {
-   
-}
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700|Source+Sans+Pro:200,700,900&display=swap');
 
+// Variables
+
+// Fonts
+$Lora: 'Lora',
+serif;
+$SourceSans: 'Source Sans Pro',
+Helvetica,
+sans-serif;
+
+// Colors
+$text: #333333;
+$links: #E87345;
+
+
+// Imports
+@import 'typography';
+@import 'reset';
+@import 'grid';
+
+
+body {}
