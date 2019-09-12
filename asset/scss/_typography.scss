@@ -1,6 +1,6 @@
 body {font-family: $Lora;
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 1.5;
  } 
 
 
@@ -22,6 +22,7 @@ h2 {
     font-size: 2rem;
     letter-spacing: 1px;
     margin: 0 0 1.5rem;
+    
  } 
 h3 {
     font-size: 1.5rem;
@@ -29,6 +30,10 @@ h3 {
     line-height: 1.333;
     text-decoration: underline;
 } 
+
+p {
+    margin-bottom: 1rem;
+}
 a {
     color: $link;
     
@@ -36,3 +41,14 @@ a {
 
 .white {color: white} 
 .center {text-align: center}
+
+.title-flex {
+    flex: 100%;
+    &:before {
+        content: "";
+        padding: 0 .25rem;
+        background: $link;
+        margin-right: .5rem;
+        
+    }
+}
