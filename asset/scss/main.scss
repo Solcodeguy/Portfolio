@@ -11,6 +11,19 @@
 @import 'modules';
 
 
+#site-title {
+    display: none;
+}
+#contact-me {
+    display: block;
+    width: 100%;
+    position: fixed;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    
+}
 
 #blog {
     background: url(../);
@@ -42,9 +55,9 @@
     }
 
     
-.portfolio (
+.portfolio {
     margin: 2rem auto;
-)
+    }
     
 .portfolio-piece {
         padding: 1rem;
@@ -107,11 +120,11 @@
         }
  }
 
-
 .footer-list {
-    color: $light;
-    font-size: .875rem;
-    margin: 4rem auto 8rem;
+        color: $light;
+        font-size: .875rem;
+        margin: 4rem auto 8rem;
+    
     
         
     &__item {
@@ -125,7 +138,7 @@
         &:last-child {
             &:after {content: none}
             margin: 4rem auto 8rem;
-    
+        }
             
-      }
+    }
 }
