@@ -44,6 +44,8 @@ a {
 .white {color: white} 
 .center {text-align: center}
 
+
+.block {display: block}
 .title-flex {
     flex: 100%;
     &:before {
@@ -54,3 +56,4 @@ a {
         
     }
 }
+
