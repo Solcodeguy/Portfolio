@@ -31,6 +31,13 @@
     background-position: right;
     background-repeat: no-repeat;
     padding: 2rem 0;
+    @media #{$med} {padding: 3rem 0}
+    @media #{$lrg} {padding: 4rem 0}
+    @media #{$lrg} {
+        background-position: top 15% right;
+        padding: 4rem 0;
+        
+    }
 }
 
 .blog {
@@ -39,11 +46,14 @@
         &:first-child {margin-top: 1.5rem}
     }
     &__article-title {color: $text}
-    
+    @media #($med) {
+        &__article-title {max-width: 26rem}
+      }
+}
 .hero {
         background: url(../images/hero-background.jpeg);
         background-repeat: no-repeat;
-        background-size: 2005;
+        background-size: 200%;
         background-position: center right 50%;
         padding: 2rem 1.5rem;
     
@@ -52,7 +62,16 @@
        margin-bottom: 1rem;
     }
     
+    @media #{$med} {
+        padding: 3rem 2.5rem 8rem;
+        &__headline, &__description, &__link {
+            max-width: 32rem;
+        }
+        
+        
     }
+    
+}
 
     
 .portfolio {
@@ -71,21 +90,14 @@
         flex-direction: column;
         justify-content: center;
         margin-bottom: 2rem;
-    &:last-child {margin-bottom: 0}
-    
-        
-        
         &__title {
             margin-bottom: .5rem;
             text-decoration: none;
-            
-            
         }
         &__title, &__tags {
-            text-shadow: 0 2px 2px rgba(0,0,0,0,4) ;
-            
+           text-shadow: 0 2px 2px rgba(0,0,0,0.6) ;
         }
-    }
+  }
     
 .contact {
     background: $text;
@@ -107,8 +119,8 @@
 }
   
 .social {
-        display: flex;
-        justify-content: center;
+       display: flex;
+       justify-content: center;
         
         &__button {
             margin: 0 1rem;
