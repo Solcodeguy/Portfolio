@@ -73,7 +73,7 @@ $screen : (xsml: 320px,
 //    GRID COLUMNS
 
 @media #{$med} {
-    .med {
+    .med, .sml {
         &--col-8 {
             padding: 0 1rem;
             flex: 0 0 100%;
