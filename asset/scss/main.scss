@@ -11,6 +11,18 @@
 @import 'modules';
 
 
+.header {
+    @media #{$med}{
+        &__container{
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            top: 0;
+            
+        }
+    }
+}
+
 #site-title {
     display: none;
 }
@@ -23,6 +35,13 @@
     left: 0;
     z-index: 999;
     
+    @media #{med}{
+        position: relative;
+        width: 13rem;
+        top: 2rem;
+        right: 1rem;
+        
+    }
 }
 
 #blog {
@@ -63,11 +82,7 @@
     }
     
     @media #{$med} {
-        padding: 3rem 2.5rem 8rem;
-        &__headline, &__description, &__link {
-            max-width: 32rem;
-        }
-        
+        padding: 3rem 0 8rem;
         
     }
     
