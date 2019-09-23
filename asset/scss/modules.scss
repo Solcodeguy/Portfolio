@@ -14,3 +14,10 @@
     
 }
 
+.header-background, section {
+    margin-bottom: 2rem;
+    @media #{$med} {margin-bottom: 3rem}
+    @media #{$lrg} {margin-bottom: 4rem}
+
+}
+
