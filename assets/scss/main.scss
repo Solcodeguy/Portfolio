@@ -3,23 +3,22 @@
 *{box-sizing: border-box;}
 
 
-// Variables
 
 
 // Imports
 @import 'typography';
 @import 'reset';
 @import 'grid';
-@import 'Vars';
+@import 'vars';
 @import 'modules';
 
 
 .header-background {
     background: url(../images/hero-background.jpg);
     background-repeat: no-repeat;
-    background-size: 200%;
-    background-position: center right 50%;
-    padding: 2rem 1.5rem;
+    background-size: cover;
+    background-position: scroll;
+    padding: 2rem 1rem;
     
     @media #{$med} {
         padding: 0 1rem 8rem;    
@@ -75,14 +74,17 @@
     @media #{$med}{
         position: relative;
         width: 13rem;
-        top: 2rem;
-        right: 1rem;
+        height: auto;
         
     }
 }
 
 .is-scrolling {
     margin-top: 5rem;
+    
+    .header-background {
+        background-position: center -8.5rem
+    }
 }
 
 .sticky-scrolling {
@@ -110,14 +112,14 @@
         margin-top: 2rem;
         &:first-child {margin-top: 1.5rem}
     }
-    &__article-title {color: $text}
+    &__article-link {color: $text}
     @media #{$med} {
         &__article-title {max-width: 26rem}
       }
 }
 .hero {
     &__headline {
-       font-size: 2rem;
+       //font-size: 2rem;
        margin-bottom: 1rem;
     }
     
@@ -140,6 +142,7 @@
         flex-direction: column;
         justify-content: center;
         margin-bottom: 2rem;
+        &:last-child {margin-bottom: 0}
         &__title {
             margin-bottom: .5rem;
             text-decoration: none;
@@ -163,10 +166,9 @@
     color:white;
     padding: 4rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    flex-flow: column nowrap;
-    
+    flex-flow: column nowrap;    
     // &__title, &__social, &__button {flex: 100%; }
     &__social {
         margin-bottom: 2rem;
@@ -208,7 +210,6 @@
         
         &:last-child {
             &:after {content: none}
-            margin: 4rem auto 8rem;
         }
             
     }
